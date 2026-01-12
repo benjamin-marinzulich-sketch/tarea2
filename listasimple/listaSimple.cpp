@@ -5,6 +5,7 @@ class ListaSimple{
     public:
 
         ListaSimple() : head(nullptr) {}
+
         void InsertarNodo(int valor){
             Nodo* nuevo = new Nodo(valor);
 
@@ -14,7 +15,8 @@ class ListaSimple{
             }
 
             Nodo* actual = head;
-            while(actual!= nullptr){
+
+            while(actual->siguiente!= nullptr){
 
                 actual = actual->siguiente;
 
